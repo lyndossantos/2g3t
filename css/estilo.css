@@ -1,0 +1,30 @@
+body{
+    background-color: pink;
+}
+.calc_simples {
+    background-color: rgb(204, 125, 138);
+    padding: 5px;
+    width: 210px;
+    border-radius: 5px;
+}
+.display_simples {
+    width: 100%;
+    text-align: center;
+}
+#resultado {
+    text-align: right;
+    height: 15%;
+    width: 80%;
+}
+.teclas {
+    text-align: center;
+}
+button{
+    width: 40px;
+    height: 40px;
+    margin-top: 2px;
+}
+#igual {
+    background-color: rgb(221, 27, 27);
+    color: white;
+}
