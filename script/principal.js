@@ -17,15 +17,41 @@ let b = "";
 let op = "";
 let valor = "";
 let tem_ponto = false;
+let desligado = false;
+
+function zerar (){
+    if (desligada) return;
+    a = "";
+    b = "";
+    op = "";
+    valor = "";
+    tem_ponto = false;
+    mostra_resultado(0);
+}
+function desligar(){
+    if (desligada){
+        desligada = false;
+        zerar () ;
+    }else{
+        zerar () ;
+        desligada = true;
+        mostra_resultado("");
+    }
+    return desligada;
+}
+
 function mostra_resultado(resul){
+    if (desligada) return;
     document.getElementById("resultado").value = resul;
 }
 function operacao(nova_op){
+    if (desligada) return;
     op = nova_op;
     a = valor;
     valor = "";
 }
 function calcula(){
+    if (desligada) return;
     if(op != ""){
         b = valor;
         valor = "";
@@ -39,6 +65,7 @@ function calcula(){
     }
 }
 function digitando(tecla){
+    if (desligada) return;
     if(tecla == "."){
         if(!tem_ponto){
             valor = valor + tecla;

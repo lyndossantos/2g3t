@@ -9,14 +9,17 @@
     <script src="./script/principal.js"></script>
 </head>
 <body>
-    <header>
-        Menu
-    </header>
+    <header> Menu</header>
       <section class="calc_simples">
          <div class="display_simples">
             <input type="text" value="0" id="resultado" readonly>
          </div>
          <div class="teclas">
+            <button onclick="desligar()">on</button>
+            <button onclick="zerar ()">c</button>
+            <button onclick="porcentagem ()">%</button>
+            <button onabort="rai_quadrada ()">&#8730;</button>
+
             <button onclick="digitando ('7')">7</button>
             <button onclick="digitando ('8')">8</button>
             <button onclick="digitando ('9')">9</button>
