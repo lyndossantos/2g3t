@@ -29,7 +29,7 @@ function zerar (){
     mostra_resultado(0);
 }
 function desligar(){
-    if (desligada){
+    if (desligar){
         desligada = false;
         zerar () ;
     }else{
@@ -65,7 +65,6 @@ function calcula(){
     }
 }
 function digitando(tecla){
-    if (desligada) return;
     if(tecla == "."){
         if(!tem_ponto){
             valor = valor + tecla;
