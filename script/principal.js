@@ -1,5 +1,5 @@
 escrever = (msg) => alert (msg);
-soma = (a,b) => a + b;
+soma = (a,b) => Number(a) + Number(b);
 sub = (a,b) => a - b;
 div = (a,b) => a / b;
 mult = (a,b) => a * b;
@@ -18,6 +18,20 @@ let op = "";
 let valor = "";
 let tem_ponto = false;
 let desligado = false;
+
+function raiz_quadrada(){
+    console.log(valor);
+    mostra_resultado(raiz(valor));
+    valor = "";
+}
+
+function porcentagem(){
+    if(op  == "mult"){
+        mostra_resultado(div(mult(a,valor),100));
+        a = "";
+        valor = "";
+    }
+}
 
 function zerar (){
     if (desligada) return;
@@ -49,6 +63,7 @@ function operacao(nova_op){
     op = nova_op;
     a = valor;
     valor = "";
+    tem_ponto = false;
 }
 function calcula(){
     if (desligada) return;
