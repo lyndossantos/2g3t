@@ -1,6 +1,13 @@
 body{
     background-color: pink;
 }
+.entrada{
+    width: 48px;
+    background-color: pink;
+    border: none;
+    border-bottom: 2px solid #000;
+    text-align: right;
+}
 .calc_simples {
     background-color: rgb(204, 125, 138);
     padding: 5px;
