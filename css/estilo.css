@@ -35,3 +35,11 @@ button{
     background-color: rgb(240, 11, 11);
     color: white;
 }
+#nova_imagem {
+    width: 640px;
+    height: 360px;
+}
+.imagens {
+  width: 100%;
+  text-align: center;
+}
